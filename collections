@@ -1,11 +1,11 @@
 collection(requests)
  {
-    id:number;
+    id:Long;
     Customer {
-        noIdentification: number;
+        noIdentification: Long;
         firstName:        string;
         lastName:         string;
-        phone:            number;
+        phone:            Long;
         email:            string;
         birthDay:         Date;
         Address {
@@ -19,17 +19,17 @@ collection(requests)
     createAt:            Date;
     currentType:         string;
     answer:              string;
-    answerAt:            null;
+    answerAt:            Date;
     statusRequest:       string;
     statusAdvertisement: string;
 }
 
-collection(customets)
+collection(customers)
     {
-        noIdentification: number;
+        noIdentification: Long;
         firstName:        string;
         lastName:         string;
-        phone:            number;
+        phone:            Long;
         email:            string;
         birthDay:         Date;
         Address {
@@ -44,4 +44,14 @@ collection(autoincrement)
     name:string
   }    
 
+collection(countries)
+  {
+    id:long,
+    country:string
+  }
 
+collection(cities)
+  {
+    id:long,
+    city:string
+  }
