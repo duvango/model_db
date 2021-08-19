@@ -1,0 +1,47 @@
+collection(requests)
+ {
+    id:number;
+    Customer {
+        noIdentification: number;
+        firstName:        string;
+        lastName:         string;
+        phone:            number;
+        email:            string;
+        birthDay:         Date;
+        Address {
+            country: string;
+            city:    string;
+            address: string;
+        }
+    }
+    requestType:         string;
+    description:         string;
+    createAt:            Date;
+    currentType:         string;
+    answer:              string;
+    answerAt:            null;
+    statusRequest:       string;
+    statusAdvertisement: string;
+}
+
+collection(customets)
+    {
+        noIdentification: number;
+        firstName:        string;
+        lastName:         string;
+        phone:            number;
+        email:            string;
+        birthDay:         Date;
+        Address {
+            country: string;
+            city:    string;
+            address: string;
+        }
+    }
+collection(autoincrement)
+  {
+    id:long,
+    name:string
+  }    
+
+
